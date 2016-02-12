@@ -15,14 +15,21 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 .right-ear:hover {
   transform: rotate(80deg);
-  transform-origin: 100px 82px;
-  transition: all .5s linear;
+  transform-origin: 120px 82px;
+  transition: all 2s linear;
+}
+
+.left-ear:hover {
+  transform: rotate(80deg);
+  transform-origin: 120px 82px;
+  transition: all 2s linear;
 }
 
 .bear {
-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
 }
 
 @keyframes spin {
@@ -30,4 +37,25 @@ animation: spin 1s infinite linear;
   0% { transform: rotate(0deg); }
 
   100% { transform: rotate(20deg); }
+}
+
+.st0 {
+  fill: #673200;
+}
+
+.st1 {
+  fill: #ffaaca;
+}
+
+.st2 {
+  fill: #c65b00;
+}
+
+.st3 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
 }
